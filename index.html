@@ -17,7 +17,7 @@
 	<!-- END HEAD -->
 	<!-- BEGIN BODY -->
 	<body>
-		<span class="ip_info country"></span><span class="ip_info province"></span><span class="ip_info city"></span><span class="ip_info isp"></span>
+		<span>欢迎你，来自</span><span class="ip_info country"></span><span class="ip_info province"></span><span class="ip_info city"></span><span class="ip_info isp" style="display:none;"></span><span> 的朋友。。。</span>
 		<a href="./myhealth/index.html" target="_blank" style="display:none;">myhealth</a><br>
 		<a href="./roah/index.html" target="_blank">roah</a><br>
 		<a href="./restaurant/index.html" target="_blank">restaurant</a><br>
@@ -39,5 +39,6 @@
   		$(".province").html(remote_ip_info.province);
   		$(".city").html(remote_ip_info.city);
   		$(".isp").html(remote_ip_info.isp);
-	});
+	     });
+	 })
 </html>
