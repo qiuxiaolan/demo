@@ -10,7 +10,7 @@
 (function($){
 	$(document).ready(function(){
 	
-		$(".banner-image").backstretch('images/banner.jpg');
+		$(".banner-image").backstretch('http://oufyhp37b.bkt.clouddn.com/qiuxiaolan/demo/worthy/banner.jpg');
 		
 		// Fixed header
 		//-----------------------------------------------
