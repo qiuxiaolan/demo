@@ -2,7 +2,11 @@ var WorthyData={
 	site:{
 		logo:"http://oufyhp37b.bkt.clouddn.com/qiuxiaolan/demo/worthy/logo.png",
 		title:"网站名",
-		subTitle:"您好，欢迎光临... <a target=\"_blank\" href=\"http://htmlcoder.me\">问候语</a>"
+		subTitle:"您好，欢迎光临... <a target=\"_blank\" href=\"http://htmlcoder.me\">问候语</a>",
+		imgs:['http://oufyhp37b.bkt.clouddn.com/qiuxiaolan/demo/worthy/banner.jpg',
+			'http://oufyhp37b.bkt.clouddn.com/qiuxiaolan/demo/worthy/bg-image-1.jpg',
+			'http://oufyhp37b.bkt.clouddn.com/qiuxiaolan/demo/worthy/bg-image-2.jpg'
+		]
 	},
 	banner:{
 		head:"网站的 <span>大字标题</span>",
