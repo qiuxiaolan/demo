@@ -5,35 +5,23 @@
 <!--<![endif]-->
 	<head>
 		<meta charset="utf-8">
-		<title>Worthy | Free Powerful Theme by HtmlCoder</title>
+		<title>One Page 门户网站演示</title>
 		<meta name="description" content="Worthy a Bootstrap-based, Responsive HTML5 Template">
-		<meta name="author" content="htmlcoder.me">
-
+		<meta name="author" content="crane.liu@qq.com">
 		<!-- Mobile Meta -->
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 		<!-- Favicon -->
 		<link id="favicon" rel="shortcut icon" href="images/favicon.icon">
-
-		<!-- Web Fonts -->
-		<!-- <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700,300&amp;subset=latin,latin-ext' rel='stylesheet' type='text/css'> -->
-		<!-- <link href='http://fonts.googleapis.com/css?family=Raleway:700,400,300' rel='stylesheet' type='text/css'> -->
-		<!-- <link href="css/google-api.css" rel="stylesheet"> -->
 		<!-- Bootstrap core CSS -->
-		<!-- <link href="bootstrap/css/bootstrap.css" rel="stylesheet"> -->
-		<link href="http://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
 
+		<!-- <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet"> -->
+		<link href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet">
 		<!-- Font Awesome CSS -->
-		<!-- <link href="fonts/font-awesome/css/font-awesome.css" rel="stylesheet"> -->
 		<link href="http://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-
 		<!-- Plugins -->
-		<!-- <link href="css/animations.css" rel="stylesheet"> -->
-		<link href="http://cdn.bootcss.com/animations/2.1/css/animations.min.css" rel="stylesheet">
-
+		<link href="css/animations.css" rel="stylesheet">
 		<!-- Worthy core CSS file -->
 		<link href="css/style.css" rel="stylesheet">
-
 		<!-- Custom css --> 
 		<link href="css/custom.css" rel="stylesheet">
 	</head>
@@ -328,7 +316,7 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-md-12">
-							<p class="text-center">Copyright © 2014 Worthy by <a target="_blank" href="http://htmlcoder.me">HtmlCoder</a>.</p>
+							<p class="text-center">Copyright © <span id="thisYear"></span> <a id="copyrightName" href="javascript:void(0);"></a></p>
 						</div>
 					</div>
 				</div>
@@ -345,49 +333,22 @@
 		<!-- JavaScript files placed at the end of the document so the pages load faster
 		================================================== -->
 		<!-- Jquery and Bootstap core js files -->
-		<!-- <script type="text/javascript" src="plugins/jquery.min.js"></script> -->
 		<script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
-		<!-- <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script> -->
 		<script src="http://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
 		<!-- Modernizr javascript -->
-		<script type="text/javascript" src="plugins/modernizr.js"></script>
-
+		<script src="http://cdn.bootcss.com/modernizr/2.8.3/modernizr.min.js"></script>
 		<!-- Isotope javascript -->
-		<!-- <script type="text/javascript" src="plugins/isotope/isotope.pkgd.min.js"></script> -->
 		<script src="http://cdn.bootcss.com/jquery.isotope/3.0.4/isotope.pkgd.min.js"></script>
-		
 		<!-- Backstretch javascript -->
-		<!-- <script type="text/javascript" src="plugins/jquery.backstretch.min.js"></script> -->
 		<script src="http://cdn.bootcss.com/jquery-backstretch/2.0.4/jquery.backstretch.min.js"></script>
-
 		<!-- Appear javascript -->
-		<!-- <script type="text/javascript" src="plugins/jquery.appear.js"></script> -->
-		<script src="http://cdn.bootcss.com/jquery.appear/0.3.3/jquery.appear.min.js"></script>
-
+		<script type="text/javascript" src="plugins/jquery.appear.js"></script>
 		<!-- Initialization of Plugins -->
 		<script type="text/javascript" src="js/template.js"></script>
-
 		<!-- Custom Scripts -->
 		<script type="text/javascript" src="js/data.js"></script>
-		<script type="text/javascript" src="js/custom.js"></script>
+		<script id="myScript" type="text/javascript" src="js/custom.js"></script>
 		<script type="text/javascript" src="http://api.map.baidu.com/getscript?v=2.0&ak=QaGmjLt14xeGWU2bseAZ7MAf&services=&t=20170517145936"></script>
 		<script type="text/javascript" src="http://api.map.baidu.com/library/AreaRestriction/1.2/src/AreaRestriction_min.js"></script>
-		<script type="text/javascript">
-			//百度地图API功能	
-			var map = new BMap.Map("mylocation");
-			var point = new BMap.Point(120.591437,31.306873);
-			map.centerAndZoom(point,12);
-			function theLocation(){
-				var city = '苏州';
-				if(city != ""){
-					map.centerAndZoom(city,12);// 用城市名设置地图中心点
-				}
-			}
-			$(function(){
-				// theLocation();
-				setInterval(function(){$("#mylocation").css("height",$("#leftContact").css("height"));},1500);
-			});
-		</script>
 	</body>
 </html>

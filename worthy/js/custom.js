@@ -63,7 +63,7 @@ var WorthyPage=function(){
     var initAbout=function(){
         $("#about").html(WorthyData.about.title);
         $("#aboutSubTitle").html(WorthyData.about.subTitle);
-        if(!WorthyData.about.img1Url){
+        if(WorthyData.about.img1Url){
             $("#aboutImg1").attr("src",WorthyData.about.img1Url);
         }
         $("#aboutDesc").html(WorthyData.about.desc);
@@ -178,7 +178,23 @@ var WorthyPage=function(){
     }
 }();
 
-jQuery(document).ready(function() {    
-   CustomJs.init();
-   WorthyPage.init();
+jQuery(document).ready(function() {  
+    $("#thisYear").html(new Date().getFullYear());
+    $("#copyrightName").html(WorthyData.site.title);
+    CustomJs.init();
+    WorthyPage.init();
+    //百度地图API功能  
+    var map = new BMap.Map("mylocation");
+    var point = new BMap.Point(120.591437,31.306873);
+    map.centerAndZoom(point,12);
+    function theLocation(){
+        var city = '苏州';
+        if(city != ""){
+            map.centerAndZoom(city,12);// 用城市名设置地图中心点
+        }
+    }
+    $(function(){
+        // theLocation();
+        setInterval(function(){$("#mylocation").css("height",$("#leftContact").css("height"));},1500);
+    });
 });
