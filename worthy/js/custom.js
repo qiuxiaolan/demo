@@ -258,6 +258,10 @@ var WorthyPage=function(){
         $("#contact_phone").append(WorthyData.contact.phone);
         $("#contact_mail").append(WorthyData.contact.mail);
 
+        $.each(WorthyData.contact.socialInfo,function(i,e){
+            $("#socialLinks").append('<li class="skype" ' + (i == 0 ? 'style="margin-left: 100px;"' : '') + '><a class="tooltips-ext" tooltip="&lt;img src=&#39;'+e.img+'&#39;&gt;&lt;br/&gt;' + e.title + '"><i class="fa ' + e.class + '"></i></a></li>');
+        });
+
         //百度地图API功能  
         $("#mylocation").css("height",$("#leftContact").css("height"));
         var map = new BMap.Map("mylocation");
@@ -307,10 +311,13 @@ var WorthyPage=function(){
     }
 }();
 
-jQuery(document).ready(function() {  
+jQuery(document).ready(function() {
     $("#thisYear").html(new Date().getFullYear());
     $("#copyrightName").html(WorthyData.site.title);
     CustomJs.init();
     WorthyPage.init();
+    $('.tooltips-ext').append("<span style='margin-bottom:20px;margin-left:-78px;'></span>");
+    $('.tooltips-ext:not([tooltip-position])').attr('tooltip-position','top');
+    $(".tooltips-ext").mouseenter(function(){$(this).find('span').empty().append($(this).attr('tooltip'));});
     
 });

@@ -103,6 +103,10 @@ var WorthyData={
 		tel:"18988888888",
 		phone:"+86 010 10000000",
 		mail:"master@xxx.com",
+		socialInfo:[
+			{class:"fa-weixin",title:"扫码加我微信",img:"http://oufyhp37b.bkt.clouddn.com/qiuxiaolan/demo/worthy/portfolio-1.jpg"},
+			{class:"fa-qq",title:"扫码加我QQ",img:"http://oufyhp37b.bkt.clouddn.com/qiuxiaolan/demo/worthy/portfolio-2.jpg"},
+		],
 		map:{
 			title:"我在这里",
 			content:"xx省xx市xx区xxxx路xxx号",
