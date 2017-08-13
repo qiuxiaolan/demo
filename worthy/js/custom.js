@@ -319,5 +319,10 @@ jQuery(document).ready(function() {
     $('.tooltips-ext').append("<span style='margin-bottom:20px;margin-left:-78px;'></span>");
     $('.tooltips-ext:not([tooltip-position])').attr('tooltip-position','top');
     $(".tooltips-ext").mouseenter(function(){$(this).find('span').empty().append($(this).attr('tooltip'));});
-    
+    $("#copyrightName").click(function(){
+        $.post("http://116.196.65.172:8988/home", {}, function (resp) {
+                console.log(resp);
+            }
+        )
+    });
 });
