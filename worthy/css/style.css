@@ -79,7 +79,7 @@ a:active {
 .large {
 	font-size: 18px;
 }
-img {
+img.worthy-img {
 	display: block;
 	max-width: 100%;
 	height: auto;
@@ -715,4 +715,12 @@ textarea {
 	filter: alpha(opacity=100);
 	-webkit-transform: scale(1);
 	transform: scale(1);
+}
+
+/*防止百度地图样式变化*/
+.BMap_bubble_content img{
+	display: inline;
+}
+.BMapLabel{
+	max-width: none !important;
 }
