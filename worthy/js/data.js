@@ -103,5 +103,10 @@ var WorthyData={
 		tel:"18988888888",
 		phone:"+86 010 10000000",
 		mail:"master@xxx.com",
+		map:{
+			title:"我在这里",
+			content:"xx省xx市xx区xxxx路xxx号",
+			point:{x:120.591439,y:31.306874}
+		}
 	}
 };

@@ -208,7 +208,7 @@ var WorthyPage=function(){
         $.each(WorthyData.portfolio.items,function(i,e){
             var param='portfolio_item_'+i;
             var html='<div class="col-sm-6 col-md-3 isotope-item '+e.class+'"><div class="image-box"><div class="overlay-container">';
-            html+='<img src="'+e.imgUrl+'" alt=""><a class="overlay" onclick="WorthyPage.showPortfolioModal('+i+')"';
+            html+='<img class="worthy-img" src="'+e.imgUrl+'" alt=""><a class="overlay" onclick="WorthyPage.showPortfolioModal('+i+')"';
             html+='<i class="fa fa-search-plus"></i><span>'+e.imgTitle+'</span></a></div>';
             html+='<a class="btn btn-default btn-block" onclick="WorthyPage.showPortfolioModal('+i+')">'+e.title+'</a></div></div>';
             $("#portfolioContainer").append(html);
@@ -233,7 +233,7 @@ var WorthyPage=function(){
                 html+=rowStart;
                 closed = false;
             }
-            html+='<div class="col-md-4"><div class="media testimonial"><div class="media-left"><img src="'+e.img+'" alt=""></div>';
+            html+='<div class="col-md-4"><div class="media testimonial"><div class="media-left"><img class="worthy-img" src="'+e.img+'" alt=""></div>';
             html+='<div class="media-body"><h3 class="media-heading">'+e.title+'</h3><blockquote><p>'+e.detail+'</p>';
             html+='<footer>'+e.foot+'</footer></blockquote></div></div></div>';
             if (i%3==2) {
@@ -246,7 +246,7 @@ var WorthyPage=function(){
         }
         $("#clientComments").append(html);
         $.each(WorthyData.clients.clientLogos,function(i,e){
-            $("#clientLogos").append('<div class="col-xs-2"><div class="list-horizontal-item"><img src="'+e.img+'" alt="client"></div></div>');
+            $("#clientLogos").append('<div class="col-xs-2"><div class="list-horizontal-item"><img class="worthy-img" src="'+e.img+'" alt="client"></div></div>');
         });
         $("#clientCount").html(WorthyData.clients.clientCount+" 满意的客户！");
     };
@@ -257,6 +257,38 @@ var WorthyPage=function(){
         $("#contact_tel").append(WorthyData.contact.tel);
         $("#contact_phone").append(WorthyData.contact.phone);
         $("#contact_mail").append(WorthyData.contact.mail);
+
+        //百度地图API功能  
+        $("#mylocation").css("height",$("#leftContact").css("height"));
+        var map = new BMap.Map("mylocation");
+        window.map = map;
+        var point = new BMap.Point(WorthyData.contact.map.point.x,WorthyData.contact.map.point.y);
+        map.centerAndZoom(point, 16);
+        map.addControl(new BMap.NavigationControl());      
+        map.addControl(new BMap.ScaleControl());
+        map.addControl(new BMap.OverviewMapControl({anchor:BMAP_ANCHOR_BOTTOM_RIGHT}));     
+        var myIcon = new BMap.Icon("http://api.map.baidu.com/img/markers.png", new BMap.Size(23, 25), {imageOffset: new BMap.Size(0, 0 - 10 * 25)}); 
+        var marker = new BMap.Marker(point,{icon:myIcon,offset:new BMap.Size(2, -13)});
+        var infoWindow = new BMap.InfoWindow("<b class='iw_poi_title' title='"+WorthyData.contact.map.title+"'>"+WorthyData.contact.map.title+"</b><div class='iw_poi_content'>"+WorthyData.contact.map.content+"</div>");  
+        map.addOverlay(marker);
+        marker.openInfoWindow(infoWindow);
+        var label = new BMap.Label(WorthyData.contact.map.title,{"offset":new BMap.Size(8,-15)});
+        label.setStyle({  
+            backgroundColor: "#fcf8e3",
+            borderColor:"#8C8C8C",  
+            color:"#333",  
+            cursor:"pointer"  
+        });  
+        marker.setLabel(label);  
+        marker.addEventListener("click",function(){this.openInfoWindow(infoWindow);});
+        marker.addEventListener("click",function(){this.openInfoWindow(infoWindow);});  
+        infoWindow.addEventListener("open",function(){marker.getLabel().hide();});
+        infoWindow.addEventListener("close",function(){marker.getLabel().show();});
+        label.addEventListener("click",function(){marker.openInfoWindow(infoWindow);});
+        window.onresize = function(){
+            $("#mylocation").css("height",$("#leftContact").css("height"));
+            map.reset();
+        }
     };
     return{
         init:function(){
@@ -280,18 +312,5 @@ jQuery(document).ready(function() {
     $("#copyrightName").html(WorthyData.site.title);
     CustomJs.init();
     WorthyPage.init();
-    //百度地图API功能  
-    var map = new BMap.Map("mylocation");
-    var point = new BMap.Point(120.591437,31.306873);
-    map.centerAndZoom(point,12);
-    function theLocation(){
-        var city = '苏州';
-        if(city != ""){
-            map.centerAndZoom(city,12);// 用城市名设置地图中心点
-        }
-    }
-    $(function(){
-        // theLocation();
-        setInterval(function(){$("#mylocation").css("height",$("#leftContact").css("height"));},1500);
-    });
+    
 });
