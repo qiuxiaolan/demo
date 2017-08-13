@@ -110,7 +110,7 @@ var WorthyData={
 		map:{
 			title:"我在这里",
 			content:"xx省xx市xx区xxxx路xxx号",
-			point:{x:120.591439,y:31.306874}
+			point:{x:120.582874,y:31.307468}
 		}
 	}
 };
