@@ -1,35 +1,247 @@
 <!DOCTYPE html>
-<html lang="en" class="">
-	<!-- BEGIN HEAD -->
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en">
+<!--<![endif]-->
 	<head>
-		<meta charset="utf-8"/>
-		<title>Demo Template</title>
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta content="width=device-width, initial-scale=1" name="viewport"/>
-		<meta name="keywords" content="bootstrap admin, bootstrap angularjs theme, bootstrap material design, metronic admin theme, bootstrap admin theme, bootstrap admin panel, bootstrap admin themes, bootstrap dashboard, bootstrap dashboard template, bootstrap dashboard theme, admin dashboard, bootstrap admin dashboard, bootstrap admin theme, admin template, responsive admin template, responsive dashboard, responsive dashboard template, dashboard designs" />
-		<meta name="description" content=""/>
-		<style>
-			.ip_info{
-				margin-right:10px;
-			}
-		</style>
+		<meta charset="utf-8">
+		<title>One Page 门户网站演示</title>
+		<meta name="description" content="Worthy a Bootstrap-based, Responsive HTML5 Template">
+		<meta name="author" content="crane.liu@qq.com">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link id="favicon" rel="shortcut icon" href="images/favicon.icon">
+		<link href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet">
+		<link href="http://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+		<link href="css/animations.css" rel="stylesheet">
+		<link href="css/style.css" rel="stylesheet">
+		<link href="css/custom.css" rel="stylesheet">
 	</head>
-	<!-- END HEAD -->
-	<!-- BEGIN BODY -->
-	<body>
-		<span>欢迎你，朋友。。。</span>
-		<a href="./myhealth/index.html" target="_blank" style="display:none;">myhealth</a><br>
-		<a href="./roah/index.html" target="_blank">roah</a><br>
-		<a href="./restaurant/index.html" target="_blank">restaurant</a><br>
-		<a href="./developer/index.html" target="_blank">developer</a><br>
-		<a href="./colorflatdesign/index.html" target="_blank">colorflatdesign</a><br>
-		<a href="./carclub/index.html" target="_blank">carclub</a><br>
-		<a href="./agency/index.html" target="_blank">agency</a><br>
-		<a href="./weddingcake/index.html" target="_blank">weddingcake</a><br>
-		<a href="./squad/index.html" target="_blank">squad</a><br>
-		<a href="./companytech/index.html" target="_blank">companytech</a><br>
-		<a href="./companynet/index.html" target="_blank">companynet</a><br>
-		<a href="./worthy/index.html" target="_blank">worthy</a><br>
+	<body class="no-trans">
+
+		<header class="header fixed clearfix navbar navbar-fixed-top">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4">
+						<div class="header-left clearfix">
+							<div class="logo smooth-scroll">
+								<a href="#banner"><img class="worthy-img" id="logo" src="" alt="Worthy"></a>
+							</div>
+							<div class="site-name-and-slogan smooth-scroll">
+								<div class="site-name"><a href="#banner"></a></div>
+								<div class="site-slogan">您好，欢迎光临...</a></div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-8">
+						<div class="header-right clearfix">
+							<div class="main-navigation animated">
+								<nav class="navbar navbar-default" role="navigation">
+									<div class="container-fluid">
+										<div class="navbar-header">
+											<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1">
+												<span class="sr-only">Toggle navigation</span>
+												<span class="icon-bar"></span>
+												<span class="icon-bar"></span>
+												<span class="icon-bar"></span>
+											</button>
+										</div>
+										<div class="collapse navbar-collapse scrollspy smooth-scroll" id="navbar-collapse-1">
+											<ul class="nav navbar-nav navbar-right">
+												<li class="active"><a href="#banner">Home</a></li>
+												<li><a href="#about">About</a></li>
+												<li><a href="#services">Services</a></li>
+												<li><a href="#portfolio">Portfolio</a></li>
+												<li><a href="#clients">Clients</a></li>
+												<li><a href="#contact">Contact</a></li>
+											</ul>
+										</div>
+
+									</div>
+								</nav>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<div id="banner" class="banner">
+			<div class="banner-image"></div>
+			<div class="banner-caption">
+				<div class="container">
+					<div class="row">
+						<div id="banner_content" class="col-md-8 col-md-offset-2 object-non-visible" data-animation-effect="fadeIn">
+							<h1 class="text-center"></h1>
+							<p class="lead text-center"></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="section_about" class="section clearfix object-non-visible" data-animation-effect="fadeIn">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<h1 id="about" class="title text-center"></h1>
+						<p id="aboutSubTitle" class="lead text-center"></p>
+						<!-- <div class="space"></div> -->
+						<div class="row">
+							<div class="col-md-6">
+								<img class="worthy-img" id="aboutImg1" src="" alt="图片">
+								<div class="space"></div>
+							</div>
+							<div class="col-md-6">
+								<div id="aboutDesc">
+								</div>
+								<ul id="aboutDescList" class="list-unstyled">
+								</ul>
+							</div>
+						</div>
+						<div class="space"></div>
+						<h2 id="aboutExtTitle"></h2>
+						<div class="row">
+							<div id="aboutExtContent" class="col-md-6">
+							</div>
+							<div class="col-md-6">
+								<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="section translucent-bg bg-image-1 blue">
+			<div class="container object-non-visible" data-animation-effect="fadeIn">
+				<h1 id="services"  class="text-center title"></h1>
+				<div class="space"></div>
+				<div class="row">
+					<div id="servicesCol1" class="col-sm-6">
+					</div>
+					<div class="space visible-xs"></div>
+					<div id="servicesCol2" class="col-sm-6">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="default-bg space blue">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2">
+						<h1 class="text-center">Let's Work Together!</h1>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="section">
+			<div class="container">
+				<h1 class="text-center title" id="portfolio">Portfolio</h1>
+				<div class="separator"></div>
+				<p id="portfolioSubTitle" class="lead text-center"></p>
+				<br>			
+				<div class="row object-non-visible" data-animation-effect="fadeIn">
+					<div class="col-md-12">
+						<div class="filters text-center">
+							<ul id="portfolioGroups" class="nav nav-pills">
+							</ul>
+						</div>
+						<div id="portfolioContainer" class="isotope-container row grid-space-20">
+								<div class="modal fade" id="portfolioModal" tabindex="-1" role="dialog" aria-labelledby="project-1-label" aria-hidden="true">
+									<div class="modal-dialog modal-lg">
+										<div class="modal-content">
+											<div class="modal-header">
+												<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">关闭</span></button>
+												<h4 class="modal-title" id="pTitle"></h4>
+											</div>
+											<div class="modal-body">
+												<h3 id="pHead"></h3>
+												<div class="row">
+													<div id="pContent" class="col-md-6">
+													</div>
+													<div class="col-md-6">
+														<img class="worthy-img" id="pUrl" src="" alt="">
+													</div>
+												</div>
+											</div>
+											<div class="modal-footer">
+												<button type="button" class="btn btn-sm btn-default" data-dismiss="modal">关闭</button>
+											</div>
+										</div>
+									</div>
+								</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="section translucent-bg bg-image-2 pb-clear">
+			<div id="clientComments" class="container object-non-visible" data-animation-effect="fadeIn">
+				<h1 id="clients" class="title text-center"></h1>
+				<div class="space"></div>
+			</div>
+			<div class="translucent-bg blue">
+				<div class="container">
+					<div class="list-horizontal">
+						<div id="clientLogos" class="row">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="default-bg space">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2">
+						<h1 id="clientCount" class="text-center"></h1>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer id="footer">
+			<div class="footer section">
+				<div class="container">
+					<h1 class="title text-center" id="contact"></h1>
+					<div class="space"></div>
+					<div class="row">
+						<div id="leftContact" class="col-sm-6">
+							<div class="footer-content">
+								<p id='contactMsg' class="large"></p>
+								<ul class="list-icons">
+									<li id="contact_address"><i class="fa fa-map-marker pr-10"></i></li>
+									<li id="contact_tel"><i class="fa fa-phone pr-10"></i></li>
+									<li id="contact_phone"><i class="fa fa-fax pr-10"></i></li>
+									<li id="contact_mail"><i class="fa fa-envelope-o pr-10"></i></li>
+								</ul>
+								<ul id="socialLinks" class="social-links">
+								</ul>
+							</div>
+						</div>
+						<div class="col-sm-6">
+							<div id="mylocation" style="width: 100%;height: 100%;">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="subfooter">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+							<p class="text-center">Copyright © <span id="thisYear"></span> <a id="copyrightName" href="javascript:void(0);"></a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<a href="javascript:void(0);" class="go2top"><i class="fa fa-arrow-up"></i></a>
+		<script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+		<script src="http://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script src="http://cdn.bootcss.com/modernizr/2.8.3/modernizr.min.js"></script>
+		<script src="http://cdn.bootcss.com/jquery.isotope/3.0.4/isotope.pkgd.min.js"></script>
+		<script src="http://cdn.bootcss.com/jquery-backstretch/2.0.4/jquery.backstretch.min.js"></script>
+		<script type="text/javascript" src="plugins/jquery.appear.js"></script>
+		<script type="text/javascript" src="js/data.js"></script>
+		<script id="myScript" type="text/javascript" src="js/custom.js"></script>
+		<script type="text/javascript" src="http://api.map.baidu.com/getscript?v=2.0&ak=QaGmjLt14xeGWU2bseAZ7MAf&services=&t=20170517145936"></script>
+		<script type="text/javascript" src="http://api.map.baidu.com/library/AreaRestriction/1.2/src/AreaRestriction_min.js"></script>
 	</body>
-	<script src="https://cdn.bootcss.com/jquery/1.11.1/jquery.js"></script>
 </html>
