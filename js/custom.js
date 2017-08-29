@@ -216,11 +216,20 @@ var WorthyPage=function(){
     }
     var showPortfolioModal=function(i){
         var e=WorthyData.portfolio.items[i];
-        $("#pTitle").html(e.mTitle);                                              
-        $("#pHead").html(e.mHead);                                              
-        $("#pContent").html(e.mContent);                                              
-        $("#pUrl").attr("src",e.imgUrl);
-        $("#portfolioModal").modal("show");                                          
+        if (e.fUrl) {
+            window.open(e.fUrl,"_blank");
+            // $("#pFrameTitle").html(e.mTitle);
+            // $("#demoFrame").attr("src",e.fUrl);
+            // $("#portfolioModalFrame").modal("show"); 
+            // var height=(($("body").height() - $("#portfolioModalFrame .modal-dialog")[0].offsetTop*2-$("iframe.full")[0].offsetTop-$("#portfolioModalFrame .modal-header")[0].offsetHeight)+"px");
+            // $("iframe.full").css("height",($("body").height()*.6)+"px");
+        }else{
+            $("#pTitle").html(e.mTitle);                                              
+            $("#pHead").html(e.mHead);                                              
+            $("#pContent").html(e.mContent);  
+            $("#pUrl").attr("src",e.imgUrl);
+            $("#portfolioModal").modal("show");                                      
+        }
     };
     var initClients=function(){
         $("#clients").html(WorthyData.clients.title);

@@ -1,35 +1,36 @@
 var WorthyData={
 	site:{
 		logo:"http://oufyhp37b.bkt.clouddn.com/qiuxiaolan/demo/worthy/logo.png",
-		title:"网站名",
-		subTitle:"您好，欢迎光临... <a target=\"_blank\" href=\"http://htmlcoder.me\">问候语</a>",
+		title:"兰雨霏工作室",
+		subTitle:"您好，欢迎光临我的小站",
 		imgs:['http://oufyhp37b.bkt.clouddn.com/qiuxiaolan/demo/worthy/banner.jpg',
 			'http://oufyhp37b.bkt.clouddn.com/qiuxiaolan/demo/worthy/bg-image-1.jpg',
-			'http://oufyhp37b.bkt.clouddn.com/qiuxiaolan/demo/worthy/bg-image-2.jpg'
+			'http://oufyhp37b.bkt.clouddn.com/qiuxiaolan/demo/worthy/bg-image-2.jpg',
+			'http://oufyhp37b.bkt.clouddn.com/qiuxiaolan/root/banner.jpg'
 		]
 	},
 	banner:{
-		head:"网站的 <span>大字标题</span>",
-		introduction:"一段简短的介绍"
+		head:"Hi，<span>欢迎光临！</span>",
+		introduction:"有朋来访问我的小站，不亦乐乎。。。~O(∩_∩)O~"
 	},
 	home:{
-		name:"主页",
+		name:"欢迎",
 		title:"",
 		subTitle:"",
 	},
 	about:{
 		name:"关于",
 		title:"关于 <span>我们</span>",
-		subTitle:"关于我们的小标题说明",
-		img1Url:"http://oufyhp37b.bkt.clouddn.com/qiuxiaolan/demo/worthy/section-image-1.png",
-		desc:"<p>第一段说明.</p><p>第二段说明</p>",
-		descList:["说明第一项","说明第二项","说明第三项","说明第四项","说明第五项"],
-		extTitle:"关于额外说明标题",
-		extContent:"<p>关于额外说明第一段内容</p><p>关于额外说明第二段内容</p><p>关于额外说明第三段内容</p>",
+		subTitle:"在国内知名企业深耕互联网软件相关行业多年",
+		img1Url:"http://oufyhp37b.bkt.clouddn.com/qiuxiaolan/root/about.jpg",
+		// desc:"<p>您有需求，我有创意。我们是创意工作室，由专业的技术人员为您量身打造。</p>",
+		descList:["<strong>我们是创意工作室</strong><p>您有需求，我有创意。我们是创意工作室，由专业的技术人员为您量身打造。</p>","<strong>我们的愿景</strong><p>我们所做的，正是您想要的！</p>","<strong>我们的使命</strong><p>通过我们的技术手段，为您创造价值！</p>"],
+		// extTitle:"关于额外说明标题",
+		// extContent:"<p>关于额外说明第一段内容</p><p>关于额外说明第二段内容</p><p>关于额外说明第三段内容</p>",
 		extQuestions:[
-			{ask:"常见问题1",answer:"问题1回答"},
-			{ask:"常见问题2",answer:"问题2回答"},
-			{ask:"常见问题3",answer:"问题3回答"},
+			// {ask:"常见问题1",answer:"问题1回答"},
+			// {ask:"常见问题2",answer:"问题2回答"},
+			// {ask:"常见问题3",answer:"问题3回答"},
 		]
 
 	},
@@ -38,38 +39,34 @@ var WorthyData={
 		title:"我们的服务",
 		subTitle:"",
 		serviceItems:[
-			{title:"服务1",content:"服务1详细说明。。。。",iconClass:"fa-cog"},
-			{title:"服务2",content:"服务2详细说明。。。。",iconClass:"fa-check"},
-			{title:"服务3",content:"服务3详细说明。。。。",iconClass:"fa-desktop"},
-			{title:"服务4",content:"服务4详细说明。。。。",iconClass:"fa-users"},
-			{title:"服务5",content:"服务5详细说明。。。。",iconClass:"fa-leaf"},
-			{title:"服务6",content:"服务6详细说明。。。。",iconClass:"fa-area-chart"},
-			{title:"服务7",content:"服务7详细说明。。。。",iconClass:"fa-child"},
-			{title:"服务8",content:"服务8详细说明。。。。",iconClass:"fa-codepen"},
+			{title:"网站设计",content:"中小型网站设计。有多种类型网站样例，可自由选择，快速上线！",iconClass:"fa-desktop"},
+			{title:"定制开发",content:"可提供专业的定制化软件开发服务，包括桌面程序、网站等，满足您的个性需求。",iconClass:"fa-code"},
+			{title:"图片加速",content:"使用云技术提供图片存储服务，让您的网站不再因为图片问题而加载缓慢，提高网站响应速度！",iconClass:"fa-camera-retro"},
+			{title:"域名服务",content:"提供域名代申请及管理服务，让您的域名不再因为无法备案而不能使用。",iconClass:"fa-globe"},
+			{title:"数据分析",content:"提供海量数据相关技术分析服务，全文索引及存储优化方案。",iconClass:"fa-line-chart"},
+			{title:"技术支持",content:"对客户交付的项目提供后期修改、运行维护等有偿技术支持。",iconClass:"fa-cogs"},
 		]
 	},
 	portfolio:{
 		name:"案例",
 		title:"案例展示",
-		subTitle:"小标题，一些典型案例图片展示",
+		subTitle:"以下为部分常用网站样例，可快速上线，后期会提供更多样例，敬请期待。。。",
 		groups:[
-			{class:"web-design",name:"网页设计"},
-			{class:"app-development",name:"应用开发"},
-			{class:"site-building",name:"网站搭建"}
+			{class:"common",name:"通用类"},
+			{class:"resume",name:"个人简历"},
+			{class:"car",name:"汽车维修"},
+			{class:"wedding",name:"婚庆蛋糕"},
+			{class:"catering",name:"餐饮行业"}
 		],
 		items:[
-			{class:"web-design",imgUrl:"http://oufyhp37b.bkt.clouddn.com/qiuxiaolan/demo/worthy/portfolio-1.jpg",title:"项目标题1",imgTitle:"图片标题1",mTitle:"弹框标题1",mHead:"内容标题1",mContent:"详细内容说明1。。。。"},
-			{class:"app-development",imgUrl:"http://oufyhp37b.bkt.clouddn.com/qiuxiaolan/demo/worthy/portfolio-2.jpg",title:"项目标题2",imgTitle:"图片标题2",mTitle:"弹框标题2",mHead:"内容标题2",mContent:"详细内容说明2。。。。"},
-			{class:"web-design",imgUrl:"http://oufyhp37b.bkt.clouddn.com/qiuxiaolan/demo/worthy/portfolio-3.jpg",title:"项目标题3",imgTitle:"图片标题3",mTitle:"弹框标题3",mHead:"内容标题3",mContent:"详细内容说明3。。。。"},
-			{class:"site-building",imgUrl:"http://oufyhp37b.bkt.clouddn.com/qiuxiaolan/demo/worthy/portfolio-4.jpg",title:"项目标题4",imgTitle:"图片标题4",mTitle:"弹框标题4",mHead:"内容标题4",mContent:"详细内容说明4。。。。"},
-			{class:"app-development",imgUrl:"http://oufyhp37b.bkt.clouddn.com/qiuxiaolan/demo/worthy/portfolio-5.jpg",title:"项目标题5",imgTitle:"图片标题5",mTitle:"弹框标题5",mHead:"内容标题5",mContent:"详细内容说明5。。。。"},
-			{class:"web-design",imgUrl:"http://oufyhp37b.bkt.clouddn.com/qiuxiaolan/demo/worthy/portfolio-6.jpg",title:"项目标题6",imgTitle:"图片标题6",mTitle:"弹框标题6",mHead:"内容标题6",mContent:"详细内容说明6。。。。"},
-			{class:"site-building",imgUrl:"http://oufyhp37b.bkt.clouddn.com/qiuxiaolan/demo/worthy/portfolio-7.jpg",title:"项目标题7",imgTitle:"图片标题7",mTitle:"弹框标题7",mHead:"内容标题7",mContent:"详细内容说明7。。。。"},
-			{class:"web-design",imgUrl:"http://oufyhp37b.bkt.clouddn.com/qiuxiaolan/demo/worthy/portfolio-8.jpg",title:"项目标题8",imgTitle:"图片标题8",mTitle:"弹框标题8",mHead:"内容标题8",mContent:"详细内容说明8。。。。"},
-			{class:"web-design",imgUrl:"http://oufyhp37b.bkt.clouddn.com/qiuxiaolan/demo/worthy/portfolio-9.jpg",title:"项目标题9",imgTitle:"图片标题9",mTitle:"弹框标题9",mHead:"内容标题9",mContent:"详细内容说明9。。。。"},
-			{class:"site-building",imgUrl:"http://oufyhp37b.bkt.clouddn.com/qiuxiaolan/demo/worthy/portfolio-10.jpg",title:"项目标题10",imgTitle:"图片标题10",mTitle:"弹框标题10",mHead:"内容标题10",mContent:"详细内容说明10。。。。"},
-			{class:"web-design",imgUrl:"http://oufyhp37b.bkt.clouddn.com/qiuxiaolan/demo/worthy/portfolio-11.jpg",title:"项目标题11",imgTitle:"图片标题11",mTitle:"弹框标题11",mHead:"内容标题11",mContent:"详细内容说明11。。。。"},
-			{class:"app-development",imgUrl:"http://oufyhp37b.bkt.clouddn.com/qiuxiaolan/demo/worthy/portfolio-12.jpg",title:"项目标题12",imgTitle:"图片标题12",mTitle:"弹框标题12",mHead:"内容标题12",mContent:"详细内容说明12。。。。"},
+			{class:"resume",imgUrl:"http://oufyhp37b.bkt.clouddn.com/qiuxiaolan/root/projects/personal-person.png-demo.item",title:"个人简历",imgTitle:"个人简历网站模板",mTitle:"弹框标题3",mHead:"",mContent:"",fUrl:"./developer/index.html"},
+			{class:"common",imgUrl:"http://oufyhp37b.bkt.clouddn.com/qiuxiaolan/root/projects/agency-common.png-demo.item",title:"通用类",imgTitle:"适用于多种类型网站模板",mTitle:"弹框标题1",mHead:"",mContent:"",fUrl:"./agency/index.html"},
+			{class:"common car",imgUrl:"http://oufyhp37b.bkt.clouddn.com/qiuxiaolan/root/projects/carclub.png-demo.item",title:"汽车维修",imgTitle:"汽车维修类网站模板，也可用于其他行业",mTitle:"弹框标题1",mHead:"",mContent:"",fUrl:"./carclub/index.html"},
+			{class:"common",imgUrl:"http://oufyhp37b.bkt.clouddn.com/qiuxiaolan/root/projects/roth1-common.png-demo.item",title:"通用类",imgTitle:"适用于多种类型网站模板",mTitle:"弹框标题5",mHead:"",mContent:"",fUrl:"./roah/index.html"},
+			{class:"catering ",imgUrl:"http://oufyhp37b.bkt.clouddn.com/qiuxiaolan/root/projects/restaurant-restaurant.png-demo.item",title:"餐饮行业",imgTitle:"餐饮行业网站模板",mTitle:"弹框标题4",mHead:"",mContent:"",fUrl:"./restaurant/index.html"},
+			{class:"common ",imgUrl:"http://oufyhp37b.bkt.clouddn.com/qiuxiaolan/root/projects/squad-common.png-demo.item",title:"通用类",imgTitle:"适用于多种类型网站模板",mTitle:"弹框标题6",mHead:"",mContent:"",fUrl:"./squad/index.html"},
+			{class:"wedding ",imgUrl:"http://oufyhp37b.bkt.clouddn.com/qiuxiaolan/root/projects/wedding-cake.png-demo.item",title:"婚纱蛋糕",imgTitle:"婚庆主题网站模板",mTitle:"弹框标题7",mHead:"",mContent:"",fUrl:"./weddingcake/index.html"},
+			{class:"common ",imgUrl:"http://oufyhp37b.bkt.clouddn.com/qiuxiaolan/root/projects/worthy-common.png-demo.item",title:"通用类",imgTitle:"适用于多种类型网站模板",mTitle:"弹框标题8",mHead:"",mContent:"",fUrl:"./worthy/index.html"},
 		]
 	},
 	clients:{
@@ -98,19 +95,19 @@ var WorthyData={
 		name:"联系",
 		title:"联系我们",
 		subTitle:"",
-		msg:"一段简短的说明，也可以没有",
-		address:"xx省xx市xx区xxxx",
-		tel:"18988888888",
-		phone:"+86 010 10000000",
-		mail:"master@xxx.com",
+		msg:"您可通过邮件、微信、QQ等方式联系我们",
+		address:"苏州市姑苏区西环路附近",
+		tel:"189-1550-7041",
+		// phone:"+86 010 10000000",
+		// mail:"master@xxx.com",
 		socialInfo:[
 			{class:"fa-weixin",title:"扫码加我微信",img:"http://oufyhp37b.bkt.clouddn.com/qiuxiaolan/demo/worthy/portfolio-1.jpg"},
 			{class:"fa-qq",title:"扫码加我QQ",img:"http://oufyhp37b.bkt.clouddn.com/qiuxiaolan/demo/worthy/portfolio-2.jpg"},
 		],
 		map:{
 			title:"我在这里",
-			content:"xx省xx市xx区xxxx路xxx号",
-			point:{x:120.582874,y:31.307468}
+			content:"苏州市姑苏区西环路附近",
+			point:{x:120.591039,y:31.308536}
 		}
 	}
 };
