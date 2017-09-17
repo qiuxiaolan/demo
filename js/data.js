@@ -102,7 +102,7 @@ var WorthyData={
 		// mail:"master@xxx.com",
 		socialInfo:[
 			{class:"fa-weixin",title:"扫码加我微信",img:"http://oufyhp37b.bkt.clouddn.com/qiuxiaolan/root/wx-qrcode.jpg"},
-			{class:"fa-qq",title:"扫码加我QQ",img:"http://oufyhp37b.bkt.clouddn.com/qiuxiaolan/root/qq-qrcode.jpg"},
+			{class:"fa-qq",title:"",img:"http://oufyhp37b.bkt.clouddn.com/qiuxiaolan/root/qq-qrcode.jpg"},
 		],
 		map:{
 			title:"我在这里",
