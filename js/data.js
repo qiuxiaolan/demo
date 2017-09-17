@@ -96,7 +96,7 @@ var WorthyData={
 		title:"联系我们",
 		subTitle:"",
 		msg:"您可通过邮件、微信、QQ等方式联系我们",
-		address:"苏州市姑苏区西环路附近",
+		address:"苏州市姑苏区市政府附近",
 		tel:"189-1550-7041",
 		// phone:"+86 010 10000000",
 		// mail:"master@xxx.com",
@@ -106,7 +106,7 @@ var WorthyData={
 		],
 		map:{
 			title:"我在这里",
-			content:"苏州市姑苏区西环路附近",
+			content:"苏州市姑苏区市政府附近",
 			point:{x:120.591039,y:31.308536}
 		}
 	}
